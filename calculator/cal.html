@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="cal.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <form >
+                    <div class="display">
+                    <input type="text" name="display">
+                    </div>
+                    <div>
+                        <input type="button" value="C" class="clear">
+                    </div>
+                    <div>
+                        <input type="button" value="7" class="seven" onclick="display.input +='7' ">
+                        <input type="button" value="8" class="seven"  onclick="display.input +='8' ">
+                        <input type="button" value="9"class="seven"  onclick="display.input +='9' ">
+                        <input type="button" value="/" class="operation"  onclick="display.input +='operation' ">
+                        </div>
+                        <div>
+                            <input type="button" value="4"class="seven"  onclick="display.input +='4' ">
+                            <input type="button" value="5"class="seven"  onclick="display.input +='5' ">
+                            <input type="button" value="6"class="seven"  onclick="display.input +='6' ">
+                            <input type="button" value="*" class="operation"onclick="display.input +='operation' " >
+                            </div> 
+                            <div>
+                                <input type="button" value="1"class="seven"  onclick="display.input +='1' ">
+                                <input type="button" value="2"class="seven"  onclick="display.input +='2' ">
+                                <input type="button" value="3"class="seven"  onclick="display.input +='3' ">
+                                <input type="button" value="-"class="operation" onclick="display.input +='operation' ">
+                                </div>
+
+ <div>
+                        <input type="button" value="0"class="seven">
+                        <input type="button" value="."class="seven">
+                        <input type="button" value="="class="equal">
+                        <input type="button" value="+"class="operation"onclick="display.input +='operation' ">
+                        </div>
+                        
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
