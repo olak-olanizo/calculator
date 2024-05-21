@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name ="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Calculator</title>
-        <link rel="stylesheet" href="cal.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="calculator">
-                <form >
-                    <div class="display">
-                    <input type="text" name="display">
-                    </div>
-                    <div>
-                        <input type="button" value="C" class="clear">
-                    </div>
-                    <div>
-                        <input type="button" value="7" class="seven" onclick="display.input +='7' ">
-                        <input type="button" value="8" class="seven"  onclick="display.input +='8' ">
-                        <input type="button" value="9"class="seven"  onclick="display.input +='9' ">
-                        <input type="button" value="/" class="operation"  onclick="display.input +='operation' ">
-                        </div>
-                        <div>
-                            <input type="button" value="4"class="seven"  onclick="display.input +='4' ">
-                            <input type="button" value="5"class="seven"  onclick="display.input +='5' ">
-                            <input type="button" value="6"class="seven"  onclick="display.input +='6' ">
-                            <input type="button" value="*" class="operation"onclick="display.input +='operation' " >
-                            </div> 
-                            <div>
-                                <input type="button" value="1"class="seven"  onclick="display.input +='1' ">
-                                <input type="button" value="2"class="seven"  onclick="display.input +='2' ">
-                                <input type="button" value="3"class="seven"  onclick="display.input +='3' ">
-                                <input type="button" value="-"class="operation" onclick="display.input +='operation' ">
-                                </div>
-
- <div>
-                        <input type="button" value="0"class="seven">
-                        <input type="button" value="."class="seven">
-                        <input type="button" value="="class="equal">
-                        <input type="button" value="+"class="operation"onclick="display.input +='operation' ">
-                        </div>
-                        
-                </form>
-            </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="border">
+      <div class="wrapper">
+        <div class="display">
+          <div class="answer">
+            <div id="cac" class="caculate"></div>
+            <div class="dis"></div>
+          </div>
         </div>
-    </body>
+
+        <div class="experestions">
+          <div class="cls-op">
+            <div class="controls"></div>
+            <div class="operands">
+              <button class="btn num white">1</button>
+              <button class="btn num white">2</button>
+              <button class="btn num white">3</button>
+              <button class="btn num white">4</button>
+              <button class="btn num white">5</button>
+              <button class="btn num white">6</button>
+              <button class="btn num white">7</button>
+              <button class="btn num white">8</button>
+              <button class="btn num white">9</button>
+              <button class="btn num white">0</button>
+              <button class="btn num white">.</button>
+              <button id="eql" class="sign num white">=</button>
+            </div>
+          </div>
+          <div class="operators">
+            <button class="btn col white b c" id="c">C</button>
+
+            <button class="btn sign white">/</button>
+            <button class="btn sign white">*</button>
+            <button class="btn sign white">+</button>
+            <button class="btn sign white">-</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
 </html>
